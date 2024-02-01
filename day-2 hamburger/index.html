@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>day 2 hamburger</title>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="hamburger center">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </div>
+    </div>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const line = document.querySelectorAll(".line");
+
+      hamburger.addEventListener("click", () => {
+        line.forEach((line) => {
+          line.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

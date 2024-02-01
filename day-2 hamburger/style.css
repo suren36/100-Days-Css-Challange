@@ -1,0 +1,113 @@
+.frame {
+  height: 100vh;
+  width: 100vw;
+  background: #3faf82;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.line {
+  height: 5px;
+  background-color: #fff;
+  width: 50px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.line2 {
+  position: relative;
+  animation: line2-reverse 0.5s ease normal forwards;
+}
+.line1 {
+  position: absolute;
+  top: 22px;
+  animation: line1-reverse 0.5s ease normal forwards;
+}
+
+.line3 {
+  position: absolute;
+  bottom: 22px;
+  animation: line3-reverse 0.5s ease normal forwards;
+}
+
+.line1.active {
+  animation: line1 0.5s ease normal forwards;
+}
+
+.line2.active {
+  animation: line2 0.5s ease normal forwards;
+}
+.line3.active {
+  animation: line3 0.5s ease normal forwards;
+}
+
+@keyframes line2 {
+  to {
+    opacity: 0;
+  }
+  from {
+    opacity: 1;
+  }
+}
+@keyframes line2-reverse {
+  to {
+    opacity: 1;
+  }
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes line1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-22px);
+  }
+  100% {
+    transform: translateY(-22px) rotate(45deg);
+  }
+}
+
+@keyframes line1-reverse {
+  0% {
+    transform: translateY(-22px) rotate(45deg);
+  }
+  50% {
+    transform: translateY(-22px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes line3 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(22px);
+  }
+  100% {
+    transform: translateY(22px) rotate(135deg);
+  }
+}
+
+@keyframes line3-reverse {
+  0% {
+    transform: translateY(22px) rotate(135deg);
+  }
+  50% {
+    transform: translateY(22px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
