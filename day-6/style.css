@@ -1,0 +1,156 @@
+:root {
+  --brown: #db9b5c;
+  --l-brown: #f5e8df;
+}
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background-color: var(--brown);
+  color: #fff;
+  text-align: center;
+}
+.square {
+  display: flex;
+  height: 300px;
+  width: 300px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.left {
+  width: 66.67%;
+  padding: 40px;
+}
+.right {
+  width: 33.33%;
+  background-color: var(--l-brown);
+}
+.img p {
+  color: #998a7b;
+}
+
+.btn-1,
+.btn-2 {
+  color: #786450;
+  border: 1px solid #998a7b;
+  border-radius: 20px;
+  padding: 4px 20px;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  &:hover {
+    background-color: #786450;
+    color: #fff;
+  }
+}
+
+.box {
+  background-color: var(--l-brown);
+
+  gap: 2px;
+  text-align: center;
+  padding: 10px;
+  &:hover {
+    background-color: #e1cfc2;
+  }
+}
+
+.box:not(:last-child) {
+  border-bottom: 2px solid #fff;
+}
+/* .box {
+  border-bottom: 1px solid #fff;
+} */
+.box {
+  height: 25%;
+}
+
+.circle.inner {
+  width: 75px;
+  height: 75px;
+  border-color: #786451 #786451 #786451 transparent;
+}
+img {
+  position: absolute;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+.image {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 15px;
+}
+/* .img img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: contain;
+
+  position: absolute;
+  text-align: center;
+} */
+
+#name {
+  font-weight: bold;
+  color: #786450;
+}
+
+#post {
+  font-size: 12px;
+  color: #998a7b;
+}
+.num {
+  color: #897663;
+  font-weight: bold;
+  font-size: 25px;
+}
+.title {
+  color: #897663;
+  font-weight: 50;
+  font-size: 20px;
+}
+
+.inner {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  border: 1px solid;
+  border-radius: 50%;
+  border-color: #786451 #786451 #786451 transparent;
+  z-index: 22;
+  transition: 2s ease-in-out;
+}
+.circle.outer:hover {
+  transform: rotate(360deg);
+}
+.image:hover .circle.outer {
+  transform: rotate(360deg);
+}
+.image:hover .circle.inner {
+  transform: rotate(-360deg);
+}
+.outer {
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  border: 1px solid;
+  border-radius: 50%;
+  border-color: #786451 transparent #786451 #786451;
+  z-index: 22;
+  transition: 2s ease-in-out;
+}
