@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  background: #ffffff;
+  filter: contrast(25);
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ball {
+  position: relative;
+  height: 90px;
+  width: 90px;
+  background-color: #000;
+  border-radius: 50%;
+  filter: blur(15px);
+}
+
+.ball-1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(123px);
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    transform-origin: 37px 37px;
+    animation: rotate 2.7s ease-in-out infinite;
+    animation-delay: 0.2s;
+    filter: blur(5px);
+  }
+}
+.ball-2 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(8deg);
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    transform-origin: 34px 34px;
+    animation: rotate 2.9s ease-in-out infinite;
+    animation-delay: 0.4s;
+    filter: blur(5px);
+  }
+}
+
+.ball-3 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(192deg);
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    transform-origin: 31px 31px;
+    animation: rotate 3.1s ease-in-out infinite;
+    animation-delay: 0.6s;
+    filter: blur(5px);
+  }
+}
+
+.ball-4 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(170deg);
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    transform-origin: 28px 28px;
+    animation: rotate 3.3s ease-in-out infinite;
+    animation-delay: 0.8s;
+    filter: blur(5px);
+  }
+}
+
+.ball-5 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(93deg);
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    transform-origin: 25px 25px;
+    animation: rotate 3.5s ease-in-out infinite;
+    animation-delay: 1s;
+    filter: blur(5px);
+  }
+}
+
+.ball-6 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(38deg);
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    transform-origin: 22px 22px;
+    animation: rotate 3.7s ease-in-out infinite;
+    animation-delay: 1.2s;
+    filter: blur(5px);
+  }
+}
+
+.ball-7 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(141deg);
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    transform-origin: 19px 19px;
+    animation: rotate 3.9s ease-in-out infinite;
+    animation-delay: 1.4s;
+    filter: blur(5px);
+  }
+}
+
+.ball-8 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  transform: rotate(58deg);
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    transform-origin: 16px 16px;
+    animation: rotate 4.1s ease-in-out infinite;
+    animation-delay: 1.6s;
+    filter: blur(5px);
+  }
+}
+
+.circle-1 {
+  position: absolute;
+  top: 30%;
+  left: 38px;
+  aspect-ratio: 1/1;
+  width: 8px;
+  transform: rotate(114deg);
+
+  &::after {
+    position: absolute;
+    content: "";
+    aspect-ratio: 1/1;
+    width: 8px;
+    background-color: #000;
+    border-radius: 50%;
+    transform-origin: 58px 58px;
+    animation: rotate 3.7s ease-in-out infinite;
+    animation-delay: 0.2s;
+    filter: blur(3px);
+  }
+}
+
+.circle-2 {
+  position: absolute;
+  top: 30%;
+  left: 38px;
+  height: 9px;
+  width: 9px;
+  transform: rotate(280deg);
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 9px;
+    width: 9px;
+    background-color: #000;
+    border-radius: 50%;
+    transform-origin: 56px 56px;
+    animation: rotate 3.9s ease-in-out infinite;
+    animation-delay: 0.4s;
+    filter: blur(3px);
+  }
+}
+
+.circle-3 {
+  position: absolute;
+  top: 30%;
+  left: 38px;
+  height: 10px;
+  width: 10px;
+  transform: rotate(293deg);
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    transform-origin: 54px 54px;
+    animation: rotate 4.1s ease-in-out infinite;
+    animation-delay: 0.6s;
+    filter: blur(3px);
+  }
+}
+
+.circle-4 {
+  position: absolute;
+  top: 30%;
+  left: 38px;
+  aspect-ratio: 1/1;
+  width: 11px;
+  transform: rotate(264px);
+
+  &::after {
+    position: absolute;
+    content: "";
+    aspect-ratio: 1/1;
+    width: 11px;
+    background-color: #000;
+    transform-origin: 52px 52px;
+    animation: rotate 4.3s ease-in-out infinite;
+    animation-delay: 0.8s;
+    filter: blur(3px);
+  }
+}
+
+.circle-5 {
+  position: absolute;
+  top: 30%;
+  left: 38px;
+  aspect-ratio: 1/1;
+  width: 12px;
+  transform: rotate(300deg);
+
+  &::after {
+    position: absolute;
+    content: "";
+    aspect-ratio: 1/1;
+    width: 12px;
+    background-color: #000;
+    transform-origin: 50px 50px;
+    animation: rotate 4.5s ease-in-out infinite;
+    animation-delay: 1s;
+    filter: blur(3px);
+  }
+}
+
+.circle-6 {
+  position: absolute;
+  top: 30px;
+  left: 38px;
+  aspect-ratio: 1/1;
+  width: 13px;
+  transform: rotate(138px);
+
+  &::after {
+    position: absolute;
+    content: "";
+    aspect-ratio: 1/1;
+    width: 13px;
+    background-color: #000;
+    transform-origin: 48px 48px;
+    animation: rotate 4.7s ease-in-out infinite;
+    animation-delay: 1.2s;
+    filter: blur(3px);
+  }
+}
+
+.circle-7 {
+  position: absolute;
+  top: 30%;
+  left: 38px;
+  aspect-ratio: 1/1;
+  width: 14px;
+  transform: rotate(18deg);
+
+  &::after {
+    position: absolute;
+    content: "";
+    aspect-ratio: 1/1;
+    width: 14px;
+    background-color: #000;
+    transform-origin: 46px 46px;
+    animation: rotate 4.9s ease-in-out infinite;
+    animation-delay: 1.4s;
+    filter: blur(3px);
+  }
+}
+
+.circle-8 {
+  position: absolute;
+  top: 30%;
+  left: 38px;
+  aspect-ratio: 1/1;
+  width: 15px;
+  transform: rotate(36px);
+
+  &::after {
+    position: absolute;
+    content: "";
+    aspect-ratio: 1/1;
+    width: 15px;
+    background-color: #000;
+    transform-origin: 44px 44px;
+    animation: rotate 5.1s ease-in-out infinite;
+    animation-delay: 1.6s;
+    filter: blur(3px);
+  }
+}
+
+.circle-9 {
+  position: absolute;
+  top: 30%;
+  left: 38px;
+  aspect-ratio: 1/1;
+  width: 16px;
+  transform: rotate(17deg);
+
+  &::after {
+    position: absolute;
+    content: "";
+    aspect-ratio: 1/1;
+    width: 16px;
+    background-color: #000;
+    transform-origin: 42px 42px;
+    animation: rotate 5.3s ease-in-out infinite;
+    animation-delay: 1.8s;
+    filter: blur(3px);
+  }
+}
+
+.circle-10 {
+  position: absolute;
+  top: 30%;
+  left: 38px;
+  aspect-ratio: 1/1;
+  width: 17px;
+  transform: rotate(177deg);
+
+  &::after {
+    position: absolute;
+    content: "";
+    aspect-ratio: 1/1;
+    width: 17px;
+    background-color: #000;
+    transform-origin: 40px 40px;
+    animation: rotate 5.5s ease-in-out infinite;
+    animation-delay: 2s;
+    filter: blur(3px);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
