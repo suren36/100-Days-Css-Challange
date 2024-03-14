@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #1a2238;
+  --moon-color: rgb(246, 237, 189);
+  --rain-color: #7fc1f9;
+  --carter-color: #ece1a8;
+  --mountain-color: #303c5d;
+}
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #1a2238;
+  overflow: hidden;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.moon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--moon-color);
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 54px;
+  left: 45px;
+}
+.crater-1 {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+  position: absolute;
+
+  top: 30px;
+}
+
+.crater-2 {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+  position: absolute;
+
+  top: 10px;
+  left: 27px;
+}
+
+.crater-3 {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+  position: absolute;
+
+  top: 55px;
+  left: 10px;
+}
+
+.crater-4 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+  position: absolute;
+
+  top: 40px;
+  left: 15px;
+}
+
+.crater-5 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+  position: absolute;
+
+  top: 30px;
+  left: 25px;
+}
+
+.crater-6 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+  position: absolute;
+
+  top: 20px;
+  left: 46px;
+}
+
+.crater-7 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+  position: absolute;
+
+  top: 44px;
+  left: 49px;
+}
+
+.crater-8 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+  position: absolute;
+
+  top: 55px;
+  left: 35px;
+}
+
+.crater-9 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+  position: absolute;
+
+  top: 26px;
+  left: 62px;
+}
+
+.crater-10 {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+  position: absolute;
+
+  top: 40px;
+  left: 35px;
+}
+
+.crater-11 {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #ece1a8;
+  position: absolute;
+
+  top: 25px;
+  left: 17px;
+}
+.mountain {
+  width: 400px;
+  height: 345px;
+  position: absolute;
+  overflow: hidden;
+}
+.mount-1 {
+  width: 337px;
+  height: 281px;
+  background-color: #26314f;
+  border-radius: 50%;
+  position: absolute;
+  top: 238px;
+  left: -118px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.mount-2 {
+  width: 337px;
+  height: 281px;
+  background-color: #26314f;
+  border-radius: 50%;
+  position: absolute;
+  top: 238px;
+  right: -118px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.mount-3 {
+  width: 337px;
+  height: 281px;
+  background-color: #303c5d;
+  border-radius: 50%;
+  position: absolute;
+  top: 300px;
+  right: 245px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.mount-4 {
+  width: 337px;
+  height: 281px;
+  background-color: #303c5d;
+  border-radius: 50%;
+  position: absolute;
+  top: 300px;
+  right: -180px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.mount-5 {
+  width: 337px;
+  height: 281px;
+  background-color: #303c5d;
+  border-radius: 50%;
+  position: absolute;
+  top: 254px;
+  right: 24px;
+
+  z-index: 1;
+}
+.rain {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.waterdrop {
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  background-color: #4ab7e6;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  position: relative;
+  animation: moveWater 0.1s infinite alternate linear,
+    raindrop 0.1s linear infinite;
+
+  z-index: 2;
+}
+
+@keyframes raindrop {
+  0% {
+    transform: translateY(-10px) translateX(0px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(100vh) translateX(100px);
+    opacity: 0;
+  }
+}
+@keyframes moveWater {
+  0%,
+  100% {
+    transform: translateY(0) rotateX(45deg);
+  }
+  50% {
+    transform: translateY(5px) rotateX(45deg);
+  }
+  60% {
+    transform: translateY(10px) rotateX(45deg);
+  }
+  70% {
+    transform: translateY(12px) rotateX(45deg);
+  }
+  80% {
+    transform: translateY(10px) rotateX(45deg);
+  }
+  90% {
+    transform: translateY(8px) rotateX(45deg);
+  }
+  95% {
+    transform: translateY(5px) rotateX(45deg);
+  }
+  100% {
+    transform: translateY(0) rotateX(45deg);
+  }
+}
+
+.climate {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  height: 60px;
+  z-index: 5;
+
+  .degree {
+    font-size: 35px;
+  }
+  .detail {
+    font-size: 15px;
+  }
+  .day {
+    font-size: 15px;
+  }
+}
