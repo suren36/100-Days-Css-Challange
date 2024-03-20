@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #4c4c4c;
+  --secondary-color: #3a3a3a;
+  --pink: #f85b5b;
+  --moon-color: rgb(246, 237, 189);
+  --rain-color: #7fc1f9;
+  --carter-color: #ece1a8;
+  --watch-color: #242424;
+}
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #4c4c4c;
+  overflow: hidden;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  z-index: 1;
+}
+.circle {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  border: 8px solid #3a3a3a;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: var(--watch-color);
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+}
+.dot-circle {
+  border-radius: 50%;
+  height: 220px;
+  width: 220px;
+  border: 4px dotted #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+}
+
+.rotate-circle {
+  border-radius: 50%;
+  height: 238px;
+  width: 238px;
+
+  border-top: 3px solid var(--pink);
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg); /* Rotate from top */
+  animation: loading 2s linear infinite;
+  z-index: 3;
+}
+
+@keyframes loading {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.details {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  z-index: 2;
+}
+.first {
+  font-size: 13px;
+  font-weight: 600;
+}
+.second {
+  font-size: 3.2em;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.third {
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.fa {
+  color: #f85b5b;
+  animation: beat 1s ease infinite;
+}
+
+@keyframes beat {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
