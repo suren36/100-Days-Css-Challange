@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #4c4c4c;
+  --secondary-color: #3a3a3a;
+  --pink: #f85b5b;
+  --moon-color: rgb(246, 237, 189);
+  --rain-color: #7fc1f9;
+  --carter-color: #ece1a8;
+  --watch-color: #242424;
+}
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  overflow: hidden;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-radius: 20px;
+}
+
+.top {
+  height: 70%;
+  width: 100%;
+  background-color: #e0c7a8;
+}
+.boot {
+  height: 300px;
+  width: 300px;
+  background: url(https://100dayscss.com/codepen/doc-martens.svg) center center
+    no-repeat;
+  position: absolute;
+  top: 60px;
+}
+
+.floor {
+  background-color: #232323;
+  height: 100px;
+  width: 100%;
+}
+.left {
+  animation: leg-swing 2s ease-in-out infinite;
+  transform-origin: 40% 20%;
+}
+.left .boot {
+  animation: shoe-turn 2s ease-in-out infinite;
+}
+.right {
+  animation: leg-swing 2s ease-in-out 1s infinite;
+  transform-origin: 40% 20%;
+}
+
+.right .boot {
+  animation: shoe-turn 2s ease-in-out 1s infinite;
+}
+
+@keyframes leg-swing {
+  0%,
+  100% {
+    transform: rotate(-22deg);
+  }
+  50% {
+    transform: rotate(40deg);
+  }
+}
+@keyframes shoe-turn {
+  0%,
+  100% {
+    transform: rotate(-10deg) translateY(-5px) translateX(10px);
+  }
+  25% {
+    transform: rotate(0deg) translateY(0px) translateX(0);
+  }
+  50% {
+    transform: rotate(10deg) translateY(-10px) translateX(10px);
+  }
+  75% {
+    transform: rotate(0deg) translateY(-30px) translateX(0);
+  }
+}
