@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <title>DAY-12 Tooltip</title>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="text">
+        <p>
+          I know quite certainly that I myself have no special talent;
+          curiosity, <span id="ob">obsession</span> and dogged endurance,
+          combined with self-criticism have brought me to my ideas.
+        </p>
+        <div class="name">
+          <h2>Albert Einstein</h2>
+        </div>
+        <div class="quote">
+          <i class="fa fa-quote-right" aria-hidden="true"></i>
+
+        </div>
+      </div>
+      <div class="popup">
+  
+          
+          <div class="popup-text">
+            <h2>[əbˈseʃ(ə)n] <i class="fa fa-volume-up" aria-hidden="true"></i>
+            </h2>
+            <p>
+              Obsession, a persistent disturbing preoccupation with an often unreasonable idea or feeling.
+            </p>
+
+        
+      </div>
+    </div>
+    <script>
+   
+   document.addEventListener("DOMContentLoaded", function() {
+  const ob = document.getElementById("ob");
+  const popup_text = document.querySelector(".popup-text");
+
+  ob.addEventListener("mouseover", function() {
+    popup_text.classList.toggle("drop");
+  });
+});
+    </script>
+ 
+    <script
+      src="https://kit.fontawesome.com/2dfb4fe994.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scrip.js"></script>
+  </body>
+</html>
