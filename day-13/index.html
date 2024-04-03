@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <title>DAY-13 Gallery</title>
+  </head>
+
+  <body>
+    <div class="frame">
+      <div class="center">
+        <div class="gallery">
+          <div class="gallery-item">
+            <img src="https://100dayscss.com/codepen/13-1.jpg" alt="" />
+            <div class="circle dot">
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://100dayscss.com/codepen/13-2.jpg" alt="" />
+            <div class="circle">
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://100dayscss.com/codepen/13-3.jpg" alt="" />
+            <div class="circle">
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://100dayscss.com/codepen/13-4.jpg" alt="" />
+            <div class="circle">
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const ob = document.getElementById("ob");
+        const popup_text = document.querySelector(".popup-text");
+
+        ob.addEventListener("mouseover", function () {
+          popup_text.classList.toggle("drop");
+        });
+      });
+    </script>
+
+    <script
+      src="https://kit.fontawesome.com/2dfb4fe994.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scrip.js"></script>
+  </body>
+</html>
